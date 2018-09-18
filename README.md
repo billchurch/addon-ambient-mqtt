@@ -2,12 +2,7 @@
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
-[![License][license-shield]](LICENSE.md)
-
-![Project Maintenance][maintenance-shield]
-[![GitHub Activity][commits-shield]][commits]
-
-[![Discord][discord-shield]][discord]
+[![License][license-shield]](LICENSE.md) ![Project Maintenance][maintenance-shield] [![Discord][discord-shield]][discord]
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
@@ -152,8 +147,6 @@ SOFTWARE.
 [bountysource]: https://www.bountysource.com/teams/hassio-addons/issues
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/billchurch
-[commits-shield]: https://img.shields.io/github/commit-activity/y/billchurch/addon-ambient-mqtt.svg
-[commits]: https://github.com/billchurch/addon-ambient-mqtt/commits/master
 [contributors]: https://github.com/billchurch/addon-ambient-mqtt/graphs/contributors
 [billchurch]: https://github.com/billchurch
 [discord-ha]: https://discord.gg/c5DvZ4e
@@ -166,7 +159,7 @@ SOFTWARE.
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/billchurch/addon-ambient-mqtt.svg
+[releases-shield]: https://badge.fury.io/gh/billchurch%2Faddon-ambient-mqtt.svg
 [releases]: https://github.com/billchurch/addon-ambient-mqtt/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: https://semver.org/spec/v2.0.0.html
