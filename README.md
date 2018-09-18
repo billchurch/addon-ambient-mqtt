@@ -129,6 +129,8 @@ Thank you for being involved! :heart_eyes:
 
 The original setup of this repository is by [Bill Church][billchurch] with much assistance from [Dale Higgs][dale3h] 
 
+The original ambient-mqtt app was developed by [Jeremy Bunting][qbunt]
+
 For a full list of all authors and contributors,
 check [the contributor's page][contributors].
 
@@ -187,4 +189,4 @@ SOFTWARE.
 [repository]: https://github.com/hassio-addons/repository
 [semver]: https://semver.org/spec/v2.0.0.html
 [dale3h]: https://github.com/dale3h
-
+[qbunt]: https://github.com/qbunt
