@@ -2,7 +2,7 @@
   "name": "Ambient Weather API to MQTT",
   "version": "dev",
   "slug": "ambient-mqtt",
-  "description": "Takes data from Ambient Weather API and pushed to MQTT broker",
+  "description": "Takes data from Ambient Weather API and publishes to an MQTT broker",
   "startup": "before",
   "boot": "auto",
   "homeassistant_api": true,
@@ -12,13 +12,15 @@
     "app_key": "",
     "mqtt_user": "",
     "mqtt_password": "",
-    "mqtt_broker_address": ""
+    "mqtt_broker_address": "core-mosquitto",
+    "mqtt_topic_json": true
   },
   "schema": {
     "api_key": "str",
     "app_key": "str",
     "mqtt_user": "str",
     "mqtt_password": "str",
-    "mqtt_broker_address": "str"
+    "mqtt_broker_address": "str",
+    "mqtt_topic_json": "bool"
   }
 }

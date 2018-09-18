@@ -24,14 +24,9 @@ RUN \
 WORKDIR /app
 
 RUN \
-    git reset e6dceadbb9c0dbbba7c2337a4d1461474738d0b6 --hard
-
-RUN \
-    npm install
-
-#    && apk del --purge .build-dependencies
-
-
+    git reset 6d4c744fc6a2c1f4ad0ac0f58641f7114cc89d15 --hard \
+    && npm install \
+    && apk del --purge .build-dependencies
 
 # Build arugments
 ARG BUILD_ARCH

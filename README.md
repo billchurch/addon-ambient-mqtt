@@ -40,7 +40,8 @@ Ambient MQTT add-on configuration:
   "app_key": "yourappkey",
   "mqtt_user": "mqttuserid",
   "mqtt_password": "mqttpassword",
-  "mqtt_broker_address": "core-mosquitto"
+  "mqtt_broker_address": "core-mosquitto",
+  "mqtt_topic_json": "true"
 }
 ```
 
@@ -63,6 +64,28 @@ This is the user password for your MQTT broker
 ### Option: `mqtt_broker_address`
 
 This is your MQTT broker IP address for example `core-mosquitto` if you're using the Core Mosquitto broker add-on. Port is optional and defaults to 1883. Example `mybroker.com:1234`
+
+### Option: `mqtt_topic_json`
+
+By default, the status will be updated to the topic `aw/data` and the payload will be JSON received from the Ambient Weather query. Setting this to false will split each property in the JSON payload to individual topics, one for property.
+
+Example of default behavior (mqtt_topic_json=true or mqtt_topic_json=):
+
+```json
+{"dateutc":1537282680000,"tempf":85.6,"humidity":92,"hourlyrainin":0,"dailyrainin":0,"weeklyrainin":0,"monthlyrainin":1.83,"yearlyrainin":37.23,"totalrainin":37.23,"tempinf":87.8,"humidityin":63,"baromrelin":31.02,"baromabsin":30.06,"dewPoint":83,"lastRain":"2018-09-14T14:56:00.000Z","deviceId":"5a41138884f9e0000d5a822d","date":"2018-09-18T14:58:00.000Z"}
+```
+
+Example of (mqtt_topic_json=false), individual topics with the vaule as the payload:
+```
+aw/data/dateutc
+1537282680000
+
+aw/data/tempf
+85.6
+
+aw/data/humidity
+92
+```
 
 ## Changelog & Releases
 
