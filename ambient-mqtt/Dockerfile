@@ -18,12 +18,13 @@ RUN \
         git=2.18.0-r0 \
     && npm set unsafe-perm true
 
-# RUN \
-#    git clone https://github.com/billchurch/ambient-mqtt.git /app
+RUN \
+    git clone https://github.com/billchurch/ambient-mqtt.git /app
 
 WORKDIR /app
 
-# RUN git reset e6dceadbb9c0dbbba7c2337a4d1461474738d0b6 --hard
+RUN \
+    git reset e6dceadbb9c0dbbba7c2337a4d1461474738d0b6 --hard
 
 RUN \
     npm install
