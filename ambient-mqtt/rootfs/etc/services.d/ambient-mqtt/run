@@ -1,0 +1,14 @@
+#!/usr/bin/with-contenv bash
+
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+readonly LOG_FILE="/config/home-assistant.log"
+declare -a options
+
+APP_DIR=/app
+
+hass.log.info "Starting the broadcast script"
+
+cd "${APP_DIR}"
+exec npm start
