@@ -19,12 +19,12 @@ RUN \
     && npm set unsafe-perm true
 
 RUN \
-    git clone https://github.com/billchurch/ambient-mqtt.git /app
+    git clone https://github.com/qbunt/ambient-mqtt.git /app
 
 WORKDIR /app
 
 RUN \
-    git reset 6d4c744fc6a2c1f4ad0ac0f58641f7114cc89d15 --hard \
+    git reset 7f99602748c18e043432135e03a1004809e7e9b9 --hard \
     && npm install \
     && apk del --purge .build-dependencies
 
