@@ -7,6 +7,7 @@
   "boot": "auto",
   "homeassistant_api": true,
   "hassio_api": true,
+  "hassio_role": "default",
   "options": {
     "api_key": "",
     "app_key": "",
