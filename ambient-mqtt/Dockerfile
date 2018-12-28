@@ -11,11 +11,11 @@ COPY rootfs /
 # Setup base
 RUN \
     apk add --no-cache \
-        nodejs=8.11.4-r0 \
-        nodejs-npm=8.11.4-r0 \
+        nodejs \
+        nodejs-npm \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.18.0-r0 \
+        git \
     && npm set unsafe-perm true
 
 RUN \
